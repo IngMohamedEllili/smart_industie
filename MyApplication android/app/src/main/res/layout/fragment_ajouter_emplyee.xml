@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d1"
+    tools:context=".Ajouter_emplyee">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="76dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ajout" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="110dp"
+        android:text="Nom                :"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="160dp"
+        android:text="Prénom           :"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/eNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="100dp"
+        android:drawable="@drawable/d1"
+        android:ems="10"
+        android:hint="Entrer nom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ePrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="Entrer prénom"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/rFid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="210dp"
+        android:text="N Carte RFID  :"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/eRfid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Entrer code"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/eKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="250dp"
+        android:ems="10"
+        android:hint="Entrer code KeyPad"
+        android:inputType="numberPassword" />
+
+    <TextView
+        android:id="@+id/keypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="260dp"
+        android:text="Mot de passe :"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/ajout"
+        android:layout_width="208dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_dis"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="Ajouter employé"
+        android:textAlignment="center" />
+    <Button
+        android:layout_width="208dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/button_dis"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="Modifier/supprimer employé"
+        android:textAlignment="center"/>
+
+</FrameLayout>

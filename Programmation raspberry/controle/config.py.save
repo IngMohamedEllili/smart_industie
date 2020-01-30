@@ -1,0 +1,9 @@
+mohamed123pfe@gmail.comconfig = {
+    "apiKey": "AIzaSyBqeGVnLEKjdSeTpg_SgNF-TTQFc7rIQ84",
+    "authDomain": "smart-home-9c3e0.firebaseapp.com",
+    "databaseURL": "https://smart-home-9c3e0.firebaseio.com",
+    "storageBucket": "smart-home-9c3e0.appspot.com"
+}
+
+mail = 'mohamed123pfe@gmail.com'
+password = 'pfe123mohamed'

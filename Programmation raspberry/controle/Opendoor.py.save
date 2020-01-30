@@ -1,0 +1,22 @@
+import pyrebase
+import time
+import config as c
+import RPi.GPIO as GPIO
+
+
+Lampe1_GPIO = 29
+Lampe2_GPIO = 31
+Lampe3_GPIO = 33
+GPIO.setup( LampeEXT_GPIO ,GPIO.OUT)
+
+firebase = pyrebase.initialize_app(c.config)
+
+# Get a reference to the auth service
+auth = firebase.auth()
+
+# Log the user in
+user = auth.sign_in_with_email_and_password(c.mail,c.password)
+
+# Get a reference to the database service
+db = firebase.database()
+

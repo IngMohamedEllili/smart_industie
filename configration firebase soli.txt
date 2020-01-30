@@ -1,0 +1,13 @@
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAVNYZq9Fl84j3UVP9qyoH8BGy3YLXcVLo",
+    authDomain: "soli-a3446.firebaseapp.com",
+    databaseURL: "https://soli-a3446.firebaseio.com",
+    projectId: "soli-a3446",
+    storageBucket: "",
+    messagingSenderId: "819515995171"
+  };
+  firebase.initializeApp(config);
+</script>

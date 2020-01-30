@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Surveillance">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Caméra de surveillance"
+        android:textColor="@color/indigo_500"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:text="vous pouvez voir votre industrie apartir de cette interface qui vous autorise l'accés à votre caméra en temps réel"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/deep_purple"
+        android:textStyle="italic|bold"/>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:layout_marginTop="50dp" />
+</FrameLayout>

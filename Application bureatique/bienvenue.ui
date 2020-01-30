@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>widget</class>
+ <widget class="QWidget" name="widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>777</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SoLi</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+
+background-color: #121254 ;}</string>
+  </property>
+  <widget class="QLineEdit" name="bienvenue_mdp_le">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>280</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	
+  padding : 6px 12px;
+  font-size : 14px ;
+  color :333 ;
+  background-color :#fff;
+  border : #4px solid #000;
+  border-radius:15px;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>entrez votre mot de passe</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>200</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia,serif</family>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+   color: rgb(255, 255, 255);
+  
+   
+   
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>Adresse e-mail :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_connexion">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>350</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  background: #4169E1 ;
+  background-image: -webkit-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -moz-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -ms-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -o-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: linear-gradient(to bottom, #4a4f96, #2d95d6);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  text-shadow: 10px 1px 3px #666666;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+QPushButton:hover {
+  background: #4f5a64;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>Connexion</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>270</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia,serif</family>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+   color: rgb(255, 255, 255);
+  
+   
+   
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>Mot de passe :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="bienvenue_email_le">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>210</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	
+  padding : 6px 12px;
+  font-size : 14px ;
+  color :333 ;
+  background-color :#fff;
+  border : #4px solid #000;
+  border-radius:15px;
+}</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="placeholderText">
+    <string>entrez votre adresse e-mail</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_bienvenue_inscription">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>500</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  background: #4169E1 ;
+  background-image: -webkit-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -moz-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -ms-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -o-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: linear-gradient(to bottom, #4a4f96, #2d95d6);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  text-shadow: 10px 1px 3px #666666;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+QPushButton:hover {
+  background: #4f5a64;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>Inscription</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>470</y>
+     <width>291</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia,serif</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-family: Georgia, serif;</string>
+   </property>
+   <property name="text">
+    <string>Vous n'avez pas un compte ? Connectez-vous</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>50</y>
+     <width>511</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="photos.qrc">:/newPrefix/bienvenue.png</pixmap>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>btn_connexion</tabstop>
+  <tabstop>bienvenue_email_le</tabstop>
+  <tabstop>bienvenue_mdp_le</tabstop>
+  <tabstop>btn_bienvenue_inscription</tabstop>
+ </tabstops>
+ <resources>
+  <include location="photos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

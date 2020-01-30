@@ -1,0 +1,30 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>alarm1.png</file>
+    <file>pir1.png</file>
+    <file>warning.png</file>
+    <file>industrie.png</file>
+    <file>gaz1.png</file>
+    <file>bienvenue.png</file>
+    <file>temperature.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>alarm64.png</file>
+    <file>lamp64.png</file>
+    <file>fan64.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>percentage3.png</file>
+    <file>ventilo.png</file>
+    <file>lampeex.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>inscription.png</file>
+    <file>arrow.png</file>
+    <file>worldwide.png</file>
+    <file>hum5.png</file>
+    <file>camera.png</file>
+    <file>controle.png</file>
+    <file>group.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>329</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Temperature</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+
+background-color: #121254 ;}
+</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>281</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Algerian</family>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+   color: #00bfff;
+  
+   
+   
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #FFFFFF;
+   font-size: 39px;
+   font-family: Algerian;
+   text-decoration: none;
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>Température</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcd_number_temperatue">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>161</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLCDNumber{
+   
+  
+   
+   
+  
+   color: #FFFFFF;
+	border-color: rgb(0, 0, 0);
+   
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>90</y>
+     <width>101</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+   color: #00bfff;
+  
+   
+   
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #4dd2ff;
+   font-size: 80px;
+   font-family: Algerian;
+   text-decoration: none;
+   
+}</string>
+   </property>
+   <property name="text">
+    <string> °C </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>100</y>
+     <width>111</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="photos.qrc">:/newPrefix/temperature.png</pixmap>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="photos.qrc"/>
+  <include location="D:/python/Lib/site-packages/PyQt4/photos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>329</width>
+    <height>188</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lampe Externe</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+
+background-color: #121254 ;}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+   color: #00bfff;
+  
+   
+   
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #FFFFFF;
+   font-size: 29px;
+   font-family: Algerian;
+   text-decoration: none;
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>Lampe Externe</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="photos.qrc">:/newPrefix/lamp64.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia,serif</family>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+   
+  
+   
+   
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #66FFFF ;
+   font-size: 17px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>L'état actuel de la lampe :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_etat_lampe_externe">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>70</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia,serif</family>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+   color: rgb(255, 255, 255);
+  
+   
+   
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: rgb(255, 255, 255);
+   font-size: 17px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>ON</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_on_lampe_externe">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>130</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  background: #ffc100 ;
+  background-image: -webkit-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -moz-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -ms-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -o-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: linear-gradient(to bottom, #4a4f96, #2d95d6);
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  text-shadow: 10px 1px 3px #666666;
+  font-family: Georgia;
+  color: #2ac83e;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+QPushButton:hover {
+  background: #4f5a64;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>ON</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_off_lampe_externe">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>130</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  background:  #ffc100 ;
+  background-image: -webkit-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -moz-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -ms-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -o-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: linear-gradient(to bottom, #4a4f96, #2d95d6);
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  text-shadow: 10px 1px 3px #666666;
+  font-family: Georgia;
+  color: #FF0000;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+QPushButton:hover {
+  background: #4f5a64;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>OFF</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>8</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="photos.qrc"/>
+  <include location="D:/python/Lib/site-packages/PyQt4/photos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

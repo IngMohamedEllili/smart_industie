@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "819515995171",
+    "firebase_url": "https://soli-a3446.firebaseio.com",
+    "project_id": "soli-a3446",
+    "storage_bucket": "soli-a3446.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819515995171:android:388056a1ad1e4c17",
+        "android_client_info": {
+          "package_name": "com.example.latla.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819515995171-6376tjgfk9l2f2ste0clpvgljoq939pt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAICvschz2wsMqjCly_FMDCzIxP2y49_to"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

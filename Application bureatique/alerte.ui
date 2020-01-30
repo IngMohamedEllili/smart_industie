@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>303</width>
+    <height>170</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Alerte</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="photos.qrc">:/newPrefix/warning.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>40</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia,serif</family>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+   
+  
+   
+   
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #FFFF;
+   font-size: 15px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>Authentification échouée !</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_connexion">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>110</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  background: #DAA520 ;
+  background-image: -webkit-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -moz-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -ms-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: -o-linear-gradient(top, #4a4f96, #2d95d6);
+  background-image: linear-gradient(to bottom, #4a4f96, #2d95d6);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  text-shadow: 10px 1px 3px #666666;
+  font-family: Georgia;
+  color: #FFFF;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+QPushButton:hover {
+  background:  #A9A9A9 ;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="photos.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_connexion</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>179</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>221</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

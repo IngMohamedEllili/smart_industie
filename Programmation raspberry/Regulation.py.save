@@ -1,0 +1,62 @@
+import pyrebase
+import time
+import config as c
+
+firebase = pyrebase.initialize_app(c.config)
+
+# Get a reference to the auth service
+auth = firebase.auth()
+
+# Log the user in
+user = auth.sign_in_with_email_and_password(c.mail,c.password)
+
+# Get a reference to the database service
+db = firebase.database()
+
+global TempSeuil
+TempSeuil = 26
+global Capteurs
+
+def stream_handler_TempSeuil(message):
+	global TempSeuil
+	TempSeuil = message["data"]
+my_stream = db.child("Consigne/Temperature").stream(stream_handler_TempSeuil)
+
+
+def stream_handler_capteurs(message):
+	Capteurs = db.child("Capteurs").get().val()
+	Regulation(Capteurs)
+my_stream = db.child("Capteurs").stream(stream_handler_capteurs)
+
+
+def RegulationTemp(Temp):
+	global TempSeuil
+	if ( float(Temp) > float(TempSeuil)):
+		db.child("Controle").update({'Ventilateur':'1'})
+	else :
+		db.child("Controle").update({'Ventilateur':'0'})
+
+def Regulation(Capteurs):
+	if( Capteurs['PIR'] == '1' or Capteurs['Gaz'] == '1' ) :
+		db.child("Controle").update({'Buzzer':'1'})
+	else :
+		db.child("Controle").update({'Buzzer':'0'})
+	if ( Capteurs['LDR'] == '1' ):
+		db.child("Controle").update({'LampExt':'1'})
+	else :
+		db.child("Controle").update({'LampExt':'0'})
+	RegulationTemp(Capteurs['Temperature'])
+        
+        
+        
+
+
+
+
+
+
+
+
+    
+
+

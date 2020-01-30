@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controle"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@color/backgroundcolor"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/cerclebackground"
+                    android:padding="10dp"
+                    android:src="@drawable/lampe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Lampe extérne"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/light_gray_line" />
+
+                <Switch
+                    android:id="@+id/sLex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On/Off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="etat du lampe" />
+
+                <TextView
+                    android:id="@+id/etlampeex"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/cerclegreen"
+                    android:padding="10dp"
+                    android:src="@drawable/lampe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Lampe interne"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/light_gray_line" />
+
+                <Switch
+                    android:id="@+id/sLin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On/Off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="etat du lampe" />
+
+                <TextView
+                    android:id="@+id/etlampin"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/colorpink"
+                    android:padding="10dp"
+                    android:src="@drawable/lampe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Lampe d'administration"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/light_gray_line" />
+
+                <Switch
+                    android:id="@+id/sLad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On/Off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="etat de lampe" />
+
+                <TextView
+                    android:id="@+id/etlampead"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/cercleyellow"
+                    android:padding="10dp"
+                    android:src="@drawable/lampe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Lampe d'entrée"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/light_gray_line" />
+
+                <Switch
+                    android:id="@+id/sLen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On/Off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="etat de lampe" />
+
+                <TextView
+                    android:id="@+id/etlampeen"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <android.support.v7.widget.CardView
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/cercleins"
+                    android:padding="5dp"
+                    android:src="@drawable/vent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Ventillateur"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/light_gray_line" />
+
+                <Switch
+                    android:id="@+id/sVen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On/Off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="etat de ventillateur" />
+
+                <TextView
+                    android:id="@+id/etventi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/buzzer"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Buzzer"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/light_gray_line" />
+
+                <Switch
+                    android:id="@+id/sBuzzer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On/Off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="etat de buzzer" />
+
+                <TextView
+                    android:id="@+id/etBuzzer"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bienvenu">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="141dp"
+        android:gravity="center"
+        android:text="Bienvenu dans votre application mobile pour contrôler et superviser votre systeme industrielle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="201dp"
+        android:gravity="center"
+        android:text="Pour acccéder à vos paramétres appuiyez sur le bouton en haut à gauche ou glissez votre doight vers la droite" />
+
+
+    <TextView
+        android:id="@+id/activer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="261dp"
+        android:text="Cliquer sur activer pour activer votre systéme" />
+
+    <Button
+        android:id="@+id/act"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="185dp"
+        android:background="@drawable/buttonact"
+        android:clickable="true"
+        android:text="Activer" />
+
+    <TextView
+        android:id="@+id/desactiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="134dp"
+        android:text="Cliquer sur activer pour désactiver votre systéme" />
+
+    <Button
+        android:id="@+id/desact"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/buttondes"
+        android:clickable="true"
+        android:text="désactiver" />
+
+</RelativeLayout>
